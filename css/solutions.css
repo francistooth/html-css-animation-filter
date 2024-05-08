@@ -110,7 +110,7 @@
 /* ex10 */
 
 .ex10 {
-    animation: ring-inf 1.2s linear infinite;
+    animation: ring-inf 2s linear infinite;
 }
 
 @keyframes ring-inf {
@@ -126,7 +126,7 @@
 /* ex11 */
 
 .ex11:hover {
-    animation: ring-partial 1.2s linear;
+    animation: ring-partial 1s linear;
 }
 
 @keyframes ring-partial {
@@ -145,15 +145,107 @@
 
 /* ex12 */
 
-.ex12 {
-    animation: rotate-border 2s linear;
+.ex12:hover .ex-12-top-white {
+    animation: moveTopOnRow 3s linear;
 }
 
-@keyframes rotate-border {
-    0%{
-      transform: rotate(0deg);
+@keyframes moveTopOnRow {
+    0% {
+        left: 10%;
     }
-    100%{
-      transform: rotate(360deg);
+
+    50% {
+        left: calc(100% - 60px);
     }
-  }
+
+    100% {
+        left: 10%;
+    }
+}
+
+.ex12:hover .ex-12-bottom-white { 
+    animation: moveBottomOnRow 3s linear;
+}
+
+@keyframes moveBottomOnRow {
+    0% {
+        right: 20%;
+    }
+
+    50% {
+        right: calc(100% - 60px);
+    }
+
+    100% {
+        right: 20%;
+    }
+}
+
+/* ex 13 */
+
+.ex13:hover .ex-13-top-white {
+    animation: moveTop 4s linear;
+}
+
+@keyframes moveTop {
+    0% {
+        top: -10px;
+        left: 20%;
+    }
+
+    30% {
+        left: calc(100% - 40px);
+        top: -10px;
+    }
+
+    45% {
+        left: calc(100% - 40px);
+        top: 100%;
+    }
+
+    75% {
+        left: 0;
+        top: 100%;
+    }
+
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+
+    100% {
+        top: -10px;
+        left: 20%;
+    }
+}
+
+.ex13:hover .ex-13-bottom-white { 
+    animation: moveBottom 4s linear;
+}
+
+@keyframes moveBottom {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    30% {
+        right: calc(100% - 40px);
+        bottom: -10px;
+    }
+    45% {
+        right: calc(100% - 40px);
+        bottom: 100%;
+    }
+    75% {
+        right: 0;
+        bottom: 100%;
+    }
+    90% {
+        right: -15px;
+        bottom: -10px;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
