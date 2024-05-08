@@ -1,3 +1,5 @@
+/* ex1 */
+
 .ex1 {
     transition: background-color 2s;
 }
@@ -5,6 +7,8 @@
 .ex1:hover {
     background: red;
 }
+
+/* ex2 */
 
 .ex2 {
     transition: 2s;
@@ -14,6 +18,8 @@
     width: 100%;
 }
 
+/* ex3 */
+
 .ex3 {
     transition: 1s;
 }
@@ -22,6 +28,8 @@
     border-radius: 50%;
 }
 
+/* ex4 */
+
 .ex4 {
     transition: 2s;
 }
@@ -29,6 +37,8 @@
 .ex4:hover {
     opacity: 0;
 }
+
+/* ex5 */
 
 .ex5 {
     transition: 1s ease;
@@ -46,10 +56,59 @@
     margin: 45px;
 }
 
-.ex6 {
+/* ex6 */
+
+.ex6:hover {
+    filter: grayscale(1);
+}
+
+/* ex7 */
+
+.ex7 {
     transition: 1s;
 }
 
-.ex6:hover {
-    
+.ex7:hover {
+    filter: grayscale(1);
 }
+
+/* ex 8 */
+
+@keyframes animation {
+    0% {
+
+    }
+  
+    50% {
+        filter: blur(1px) grayscale(0.4);
+        border-radius: 10px; 
+    }
+  
+    100% {
+        filter: grayscale(0.4);
+    }
+}
+
+.ex8:hover {
+    animation: animation 2s;
+    filter: grayscale(0.4);
+}
+
+/* ex 9 */
+
+.ex9 {
+    transition: 2s;
+}
+
+.ex9:hover {
+    margin: 0px;
+    width: 600px;
+    border-radius: 20px;
+    filter: grayscale(1);
+}
+
+/* ex10 */
+
+/* ex11 */
+
+/* ex12 */
